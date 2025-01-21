@@ -3,8 +3,8 @@ import 'package:learning/Drawer/cart_page.dart';
 import 'package:learning/Drawer/container_page.dart';
 import 'package:learning/Drawer/scroll_view_page.dart';
 
-class Drawwer extends StatelessWidget {
-  const Drawwer({super.key});
+class DrawerPage extends StatelessWidget {
+  const DrawerPage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

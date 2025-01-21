@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class Task6Main extends StatelessWidget {
-  const Task6Main({super.key});
+class InstagramProfile extends StatelessWidget {
+  const InstagramProfile({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 205, 195, 195),
-        title: const Text(
-          'pi_ne_apple',
-          style: TextStyle(
-              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 18),
-        ),
-        actions: [
-          Container(
+          backgroundColor: const Color.fromARGB(255, 205, 195, 195),
+          title: const Text(
+            'pi_ne_apple',
+            style: TextStyle(
+                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 18),
+          ),
+          actions: [
+            Container(
               height: 28,
               decoration: BoxDecoration(
                 color: const Color.fromARGB(255, 205, 195, 195),
@@ -23,17 +23,11 @@ class Task6Main extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: const Center(
-                child: Icon(
-                  Icons.add,
-                  size: 25,
-                ),
-              )),
-          const Icon(
-            Icons.menu,
-            size: 35,
-          ),
-        ],
-      ),
+                child: Icon(Icons.add, size: 25),
+              ),
+            ),
+            const Icon(Icons.menu, size: 35),
+          ]),
       body: DefaultTabController(
         length: 3,
         child: Padding(
@@ -48,38 +42,28 @@ class Task6Main extends StatelessWidget {
                     backgroundImage: AssetImage('assets/images/img_1.jpg'),
                     radius: 40.0,
                   ),
-                  Column(
-                    children: [
-                      Text(
-                        '6',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18.0,
-                        ),
-                      ),
-                      Text('posts'),
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Text(
-                        '62',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18.0,
-                        ),
-                      ),
-                      Text('followers'),
-                    ],
-                  ),
+                  Column(children: [
+                    Text(
+                      '6',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 18.0),
+                    ),
+                    Text('posts'),
+                  ]),
+                  Column(children: [
+                    Text(
+                      '62',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold, fontSize: 18.0),
+                    ),
+                    Text('followers'),
+                  ]),
                   Column(
                     children: [
                       Text(
                         '68',
                         style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18.0,
-                        ),
+                            fontWeight: FontWeight.bold, fontSize: 18.0),
                       ),
                       Text('following'),
                     ],
@@ -88,10 +72,7 @@ class Task6Main extends StatelessWidget {
               ),
               const Text(
                 'आकृति राठौर।।',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 15.0,
-                ),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
               ),
               Container(
                 height: 22.0,
@@ -99,9 +80,7 @@ class Task6Main extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.grey.withOpacity(0.2),
                   borderRadius: const BorderRadius.all(
-                    Radius.circular(
-                      20.0,
-                    ),
+                    Radius.circular(20.0),
                   ),
                 ),
                 child: const Text(
@@ -114,22 +93,18 @@ class Task6Main extends StatelessWidget {
                 'D A Y D R E A M',
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-              const SizedBox(
-                height: 10.0,
-              ),
+              const SizedBox(height: 10.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.all(0.0),
                     height: 25.0,
-                    width: 210.0,
+                    width: 180.0,
                     decoration: BoxDecoration(
                       color: Colors.grey.withOpacity(0.2),
                       borderRadius: const BorderRadius.all(
-                        Radius.circular(
-                          5.0,
-                        ),
+                        Radius.circular(5.0),
                       ),
                     ),
                     child: const Text(
@@ -140,13 +115,11 @@ class Task6Main extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.all(0.0),
                     height: 25.0,
-                    width: 210.0,
+                    width: 180.0,
                     decoration: BoxDecoration(
                       color: Colors.grey.withOpacity(0.2),
                       borderRadius: const BorderRadius.all(
-                        Radius.circular(
-                          5.0,
-                        ),
+                        Radius.circular(5.0),
                       ),
                     ),
                     child: const Text(
@@ -161,34 +134,22 @@ class Task6Main extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.grey.withOpacity(0.2),
                       borderRadius: const BorderRadius.all(
-                        Radius.circular(
-                          5.0,
-                        ),
+                        Radius.circular(5.0),
                       ),
                     ),
-                    child: const Icon(
-                      Icons.person_add_alt_1_outlined,
-                      size: 20,
-                    ),
+                    child:
+                        const Icon(Icons.person_add_alt_1_outlined, size: 20),
                   )
                 ],
               ),
               const TabBar(tabs: [
+                Tab(icon: Icon(Icons.grid_on_outlined, color: Colors.black)),
                 Tab(
-                    icon: Icon(
-                  Icons.grid_on_outlined,
-                  color: Colors.black,
-                )),
+                    icon: Icon(Icons.video_library_outlined,
+                        color: Colors.black)),
                 Tab(
-                    icon: Icon(
-                  Icons.video_library_outlined,
-                  color: Colors.black,
-                )),
-                Tab(
-                    icon: Icon(
-                  Icons.assignment_ind_outlined,
-                  color: Colors.black,
-                ))
+                    icon: Icon(Icons.assignment_ind_outlined,
+                        color: Colors.black))
               ])
             ],
           ),

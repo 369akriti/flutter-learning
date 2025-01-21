@@ -66,7 +66,7 @@ class Calculator extends StatelessWidget {
                   Colors.black,
                 ),
                 calculatorbutton(
-                  '()',
+                  'C',
                   Colors.grey.shade300,
                   Colors.black,
                 ),
